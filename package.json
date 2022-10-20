@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto node js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariojar31/guia-hoteles.git"
+  },
+  "author": "Mario Acendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariojar31/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/mariojar31/guia-hoteles#readme"
+}
