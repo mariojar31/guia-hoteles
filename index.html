@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Hoteles</title>
   </head>
@@ -12,6 +13,7 @@
 
     <div class="jumbotron">
       <h2>Hoteles</h2>
+    </div>
       <div class="container">
         <div class="row">
           <div class="col">
@@ -28,53 +30,72 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col">
+        <div class="d-flex flex-wrap">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Buenos Aires</h2>
             <p>Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
-          <div class="col">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Barcelona</h2>
             <p>Hotel ubicado en la hermosa ciudad de Barcelona</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
-          <div class="col">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Rio de Janeiro</h2>
             <p>Disfruta de la mágia de Río en este espectacular hotel.</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
-          <div class="col">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Lima</h2>
             <p>Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="d-flex flex-wrap">
+          <div class="col-sm-3 hotel">
             <h2>Hotel La Paz</h2>
             <p>Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
-          <div class="col">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Madrid</h2>
             <p>Hotel ubicado en la hermosa ciudad de Barcelona</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
-          <div class="col">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Andorra</h2>
             <p>Disfruta de la mágia de Río en este espectacular hotel.</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button">Reservar</button>
           </div>
-          <div class="col">
+          <div class="col-sm-3 hotel">
             <h2>Hotel Bogota</h2>
             <p>Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
-            <button type="button">Reservar</button>
+            <button class="btn" type="button" primary>Reservar</button>
           </div>
         </div>
-
       </div>  
-    </div>
+      <footer class="footer">
+        <div class="footer__social container">
+          <div class="d-flex social">
+            <li class="redes" style="list-style: none;"><a href="#" class="footer_media">Facebook</a></li>
+            <li class="redes" style="list-style: none;"><a href="#" class="footer_media">Instagram</a></li>
+            <li class="redes" style="list-style: none;"><a href="#" class="footer_media">Twitter</a></li>
+          </div>
+        </div>
+        
+        <section class="institucional">
+          <address class="institucional__direccion">
+              Calle Vergueiro, 3185<br>Villa Mariana, São Paulo
+              <article class="institucional__contacto">
+                  <p>
+                      <a href="tel:+551155712751">+55 11 55712751 o </a>
+                      <a href="mailto:contato@hotels.com" class="institucional__contacto-email">contato@hotels.com</a>
+                  </p>
+              </article>
+          </address>
+      </section>
+    </footer>
 
 
 
