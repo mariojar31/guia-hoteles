@@ -6,16 +6,61 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheey" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
     <title>Hoteles</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hoteles</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./terminos.html">Terminos y Condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>  
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <div class="jumbotron">
       <h2>Hoteles</h2>
     </div>
       <div class="container">
-        <div class="row">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="./index.html">Home</a></li>
+          </ol>
+        </nav>
+
+        
+        <img class="img-fluid banner" src="images/ATW_Vacation_Top_Image_cq9cri.jpg" >
+        
+
+        <div class="row" style="padding: 10px 0;">
           <div class="col">
             <h2>¿Como funciona?</h2>
             <p>Busca los hoteles de acuerdo a tus preferencias.</p>
@@ -30,51 +75,80 @@
           </div>
         </div>
 
-        <div class="d-flex flex-wrap">
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Buenos Aires</h2>
-            <p>Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Barcelona</h2>
-            <p>Hotel ubicado en la hermosa ciudad de Barcelona</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Rio de Janeiro</h2>
-            <p>Disfruta de la mágia de Río en este espectacular hotel.</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Lima</h2>
-            <p>Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
+        <div class="d-flex flex-wrap justify-content-evenly" style="padding: 10px 0;">            
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Buenos Aires</h5>
+                <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>             
+            </div>
+     
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Barcelona</h5>
+                <p class="card-text">Hotel ubicado en la hermosa ciudad de Barcelona.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                <p class="card-text">Disfruta de la mágia de Río en este espectacular hotel.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>            
+            </div>   
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Lima</h5>
+                <p class="card-text">Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel La Paz</h5>
+                <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Madrid</h5>
+                <p class="card-text">Hotel ubicado en la hermosa ciudad de Madrid</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Andorra</h5>
+                <p class="card-text">Disfruta de la mágia de Río en este espectacular hotel.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Bogota</h5>
+                <p class="card-text">Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
+                <a href="#" class="btn btn">Reservar</a>
+              </div>
+            </div>
         </div>
-        <div class="d-flex flex-wrap">
-          <div class="col-sm-3 hotel">
-            <h2>Hotel La Paz</h2>
-            <p>Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Madrid</h2>
-            <p>Hotel ubicado en la hermosa ciudad de Barcelona</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Andorra</h2>
-            <p>Disfruta de la mágia de Río en este espectacular hotel.</p>
-            <button class="btn" type="button">Reservar</button>
-          </div>
-          <div class="col-sm-3 hotel">
-            <h2>Hotel Bogota</h2>
-            <p>Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
-            <button class="btn" type="button" primary>Reservar</button>
-          </div>
-        </div>
-      </div>  
+      </div>
+ 
       <footer class="footer">
         <div class="footer__social container">
           <div class="d-flex social">
@@ -89,8 +163,8 @@
               Calle Vergueiro, 3185<br>Villa Mariana, São Paulo
               <article class="institucional__contacto">
                   <p>
-                      <a href="tel:+551155712751">+55 11 55712751 o </a>
-                      <a href="mailto:contato@hotels.com" class="institucional__contacto-email">contato@hotels.com</a>
+                      <p><span class="oi oi-phone"></span><a href="tel:+551155712751">+55 11 55712751</a></p>
+                      <p><span class="oi oi-inbox"></span><a href="mailto:contato@hotels.com" class="institucional__contacto-email">contato@hotels.com</a></p>
                   </p>
               </article>
           </address>
@@ -98,11 +172,10 @@
     </footer>
 
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

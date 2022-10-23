@@ -2,6 +2,7 @@
     background-color: rgb(253, 201, 31);
     color: black;
     padding: 3vw;
+    margin-top: 50px;
 }
 
 .hotel{
@@ -9,7 +10,24 @@
 }
 
 .btn{
+    background-color: lightgray;
+}
+
+.btn:hover{
     background-color: rgb(253, 201, 31);
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+}
+
+.breadcrumb-link{
+    color: darkgray;
+}
+.breadcrumb-link:hover{
+    font-weight: bold;
+    color: rgb(253, 201, 31);
 }
 
 .footer{
