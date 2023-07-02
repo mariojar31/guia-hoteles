@@ -1,0 +1,43 @@
+.jumbotron {
+  background-color: #fdc91f;
+  color: black;
+  padding: 3vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hotel {
+  padding: 1vw 2vw;
+}
+.btn {
+  background-color: #d3d3d3;
+}
+.btn:hover {
+  background-color: #fdc91f;
+}
+.banner {
+  width: 100%;
+  height: 300px;
+}
+.breadcrumb-link {
+  color: darkgray;
+}
+.breadcrumb-link:hover {
+  font-weight: bold;
+  color: #fdc91f;
+}
+.titulo-toggles {
+  color: #fdc91f;
+}
+.footer {
+  padding: 10px 10px 0 10px;
+  background-color: #fdc91f;
+  margin-bottom: 0px;
+  text-align: center;
+  justify-content: center;
+}
+.redes {
+  padding: 0 2vw;
+}
+.social {
+  justify-content: center;
+}
