@@ -6,17 +6,45 @@
   margin-bottom: 20px;
 }
 
+.nav-link{
+  color: white;
+}
+
+.btns_info{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-info{
+  margin: 0% 1%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 201, 31,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color:rgb(253, 201, 31);
+} 
+
+.navbar-brand{
+  color: #fdc91f;
+}
+
 .hotel {
   padding: 1vw 2vw;
 }
 
 .btn {
   background-color: #d3d3d3;
+  color: black;
+  border: none;
 }
 
 .btn:hover {
   background-color: #fdc91f;
 }
+
 
 .banner {
   width: 100%;
@@ -44,10 +72,21 @@
   justify-content: center;
 }
 
+.contac-tit{
+  margin-left: 5%;
+}
+
 .redes {
   padding: 0 2vw;
+
+}
+
+.footer_media{
+  color: black;
+  font-weight: bold;
 }
 
 .social {
   justify-content: center;
+  padding: 3% 0%;
 }/*# sourceMappingURL=styles.css.map */

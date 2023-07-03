@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- build:css dist/index.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheey" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <!-- endbuild -->
@@ -13,37 +13,31 @@
     <title>Hoteles</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom-dark fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Hoteles</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon"></span>
+        <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="custom-toggler navbar-toggler-icon" id="navbar-toggler-icon-custome"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hoteles</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./precios.html">Precios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./terminos.html">Terminos y Condiciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>  
-            </ul>
-          
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./precios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./terminos.html">TyC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contactenos</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -99,10 +93,16 @@
           </button>
         </div>
         
+        <br>
         <div class="row">
-          <div class="col"><a class="titulo-toggles" data-bs-toggle="collapse" href="#funciona"><h2>¿Como funciona?</h2></a></div>
-          <div class="col"><a class="titulo-toggles" data-bs-toggle="collapse" href="#reservar"><h2>¿Donde puedo reservar?</h2></a></div>
-          <div class="col"><a class="titulo-toggles" data-bs-toggle="collapse" href="#pago"><h2>¿Como pago?</h2></a></div>
+          <div class="btns_info">
+            <button class="btn btn-primary btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="pago">¿Como funciona?</button>
+            <button class="btn btn-primary btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#reservar" aria-expanded="false" aria-controls="reservar">¿donde puedo reservar?</button>
+            <button class="btn btn-primary btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#reservar" aria-expanded="false" aria-controls="reservar">¿Como pago?</button>
+
+          </div>
+          
+
         </div>
 
 
@@ -123,7 +123,7 @@
 
         <div class="d-flex flex-wrap justify-content-evenly" style="padding: 10px 0;">            
             <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva" style="width: 18rem;">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-ba.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Buenos Aires</h5>
                 <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
@@ -132,7 +132,7 @@
             </div>
      
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-bc.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Barcelona</h5>
                 <p class="card-text">Hotel ubicado en la hermosa ciudad de Barcelona.</p>
@@ -141,7 +141,7 @@
             </div>
 
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-rj.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Rio de Janeiro</h5>
                 <p class="card-text">Disfruta de la mágia de Río en este espectacular hotel.</p>
@@ -149,7 +149,7 @@
               </div>            
             </div>   
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-li.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Lima</h5>
                 <p class="card-text">Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
@@ -158,7 +158,7 @@
             </div>
   
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-lp.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel La Paz</h5>
                 <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Buenos Aires.</p>
@@ -167,7 +167,7 @@
             </div>
   
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-md.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Madrid</h5>
                 <p class="card-text">Hotel ubicado en la hermosa ciudad de Madrid</p>
@@ -176,7 +176,7 @@
             </div>
   
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-an.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Andorra</h5>
                 <p class="card-text">Disfruta de la mágia de Río en este espectacular hotel.</p>
@@ -185,7 +185,7 @@
             </div>
   
             <div class="card" style="width: 18rem;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Con esta compra recibes un 50% en tu proxima reserva">
-              <img class="card-img-top" src="images/cards.jpg" alt="Card image cap">
+              <img class="card-img-top" src="images/hotel-bg.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Bogota</h5>
                 <p class="card-text">Disfruta de la cultura de perú y hospedate en el mejor hotel de la ciudad de Lima.</p>
@@ -195,7 +195,7 @@
         </div>
 
         <div class="row d-flex justify-content-center" style="padding: 20px;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-title="Para mayor informacion" data-bs-content="Uno de nuestros asesores se contactará con usted.">
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="background-color: rgb(253, 201, 31);">Contactar con asesor</button>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="" style="background-color: rgb(253, 201, 31);">Contactar con un asesor</button>
         </div>
         
         
@@ -223,8 +223,8 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar Mensaje</button>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@
         
         <section class="institucional">
           <address class="institucional__direccion">
-              Calle Vergueiro, 3185<br>Villa Mariana, São Paulo
+              Barranquilla, Colombia
               <article class="institucional__contacto">
                   <p>
                       <p><span class="oi oi-phone"></span><a href="tel:+551155712751">+55 11 55712751</a></p>
